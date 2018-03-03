@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fiap.rm45401.demoaacretrofit.ui.mainscreen.MainActivity">
+
+    <EditText
+        android:id="@+id/etCep"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Digite aqui o CEP..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btBuscarEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCep" />
+
+    <TextView
+        android:id="@+id/tvEnderecoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Endereço:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBuscarEndereco"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvEndereco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEnderecoTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEnderecoTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvEnderecoTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/tvComplementoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Complemento:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnderecoTitle"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvComplemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvComplementoTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvComplementoTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvComplementoTitle"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/tvBairroTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Bairro:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvComplementoTitle"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvBairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBairroTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvBairroTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvBairroTitle" />
+
+    <TextView
+        android:id="@+id/tvCidadeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cidade:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBairroTitle"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCidadeTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCidadeTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvCidadeTitle" />
+
+    <TextView
+        android:id="@+id/tvEstadoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Estado:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCidadeTitle"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEstadoTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEstadoTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvEstadoTitle" />
+
+</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#FFF"
+        android:id="@+id/loading"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARREGANDO OS DADOS"/>
+    </LinearLayout>
+</FrameLayout>
